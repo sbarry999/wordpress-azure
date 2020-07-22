@@ -18,3 +18,9 @@ steps:
     archiveFile: '$(Build.ArtifactStagingDirectory)/wp.zip'
     replaceExistingArchive: true
     verbose: true
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
