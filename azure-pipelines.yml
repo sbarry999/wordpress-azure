@@ -17,3 +17,4 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/wp.zip'
     replaceExistingArchive: true
+    verbose: true
